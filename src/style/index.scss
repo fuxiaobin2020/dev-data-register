@@ -1,0 +1,506 @@
+@import './mixin.scss';
+@import './base.scss';
+@import './btn.scss';
+@import './element-ui.scss';
+
+html {
+  color: #000;
+  font-size: 16px
+}
+
+body,
+ul,
+ol,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+p,
+blockquote,
+th,
+td,
+pre,
+xmp {
+  margin: 0;
+  padding: 0
+}
+
+address,
+cite,
+dfn,
+em,
+i,
+optgroup,
+var {
+  font-style: normal
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left
+}
+
+caption,
+th {
+  text-align: inherit
+}
+
+ul,
+ol,
+menu {
+  list-style: none
+}
+
+fieldset,
+img {
+  border: 0
+}
+
+img,
+object,
+input,
+textarea,
+button,
+select {
+  vertical-align: middle
+}
+
+article,
+aside,
+footer,
+header,
+section,
+nav,
+figure,
+figcaption,
+hgroup,
+details,
+menu {
+  display: block
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "\0020"
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  outline: 0 none;
+  border: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0
+}
+
+mark {
+  background-color: transparent
+}
+
+a,
+ins,
+s,
+u,
+del {
+  text-decoration: none
+}
+
+sup,
+sub {
+  vertical-align: baseline
+}
+
+html {
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family:BMWTypeCondensedLight!important;
+  color: #333;
+  font-size: 14px;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+}
+
+hr {
+  height: .02rem;
+  margin: .1rem 0;
+  border: medium none;
+  border-top: .02rem solid #cacaca;
+}
+
+a {
+  color: #6b7580;
+  text-decoration: none;
+}
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: BMWTypeCondensedLight!important;
+  overflow-y: scroll!important;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.padding-content {
+  padding: 4px 0;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.block {
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.inlineBlock {
+  display: block;
+}
+
+code {
+  background: #eef1f6;
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  display: block;
+  line-height: 36px;
+  a {
+    color: #337ab7;
+    cursor: pointer;
+    &:hover {
+      color: rgb(32, 160, 255);
+    }
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all .2s ease
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+
+//main-container全局样式
+.app-container {
+  padding: 20px;
+}
+.components-container {
+  margin: 30px 50px;
+  position: relative;
+}
+.pagination-container {
+  margin-top: 30px;
+}
+
+.editor-container .CodeMirror {
+  height: 100%!important;
+}
+
+.text-center{
+  text-align: center
+}
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.sub-navbar {
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  width: 100%;
+  text-align: right;
+  padding-right: 20px;
+  transition: 600ms ease position;
+  background: linear-gradient(90deg, rgba(32, 182, 249, 1) 0%, rgba(32, 182, 249, 1) 0%, rgba(33, 120, 241, 1) 100%, rgba(33, 120, 241, 1) 100%);
+  .subtitle {
+    font-size: 20px;
+    color: #fff;
+  }
+  &.draft {
+    background: #d0d0d0;
+  }
+  &.deleted {
+    background: #d0d0d0;
+  }
+}
+
+.link-type,
+.link-type:focus {
+  color: #337ab7;
+  cursor: pointer;
+  &:hover {
+    color: rgb(32, 160, 255);
+  }
+}
+
+.publishedTag,
+.draftTag,
+.deletedTag {
+  color: #fff;
+  background-color: $panGreen;
+  line-height: 1;
+  text-align: center;
+  margin: 0;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+.draftTag {
+  background-color: $yellow;
+}
+
+.deletedTag {
+  background-color: $red;
+}
+
+.input-label {
+  font-size: 14px;
+  color: #48576a;
+  line-height: 1;
+  padding: 11px 5px 11px 0;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+.no-marginLeft {
+  .el-checkbox {
+    margin: 0 20px 15px 0;
+  }
+  .el-checkbox+.el-checkbox {
+    margin-left: 0px;
+  }
+}
+
+.filter-container {
+  padding-bottom: 10px;
+  .filter-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+}
+
+
+//refine vue-multiselect plugin
+.multiselect {
+  line-height: 16px;
+}
+
+.multiselect--active {
+  z-index: 1000 !important;
+}
+
+//refine simplemde
+.simplemde-container{
+  .editor-toolbar.fullscreen,.CodeMirror-fullscreen{
+    z-index: 1003;
+  }
+}
+
+//暂时性解决diolag 问题 https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+//github-corner
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+.login-container {
+  margin-top: -65px;
+  background-clip: padding-box;
+  padding: 40px 80px!important;
+  // border: 1px solid #eaeaea;
+  width: 790px;
+  height: 501px;
+  background: #323944;
+  border-radius: 18px;
+  font-family: BMWTypeCondensedLight!important;
+  font-size: 26px;
+  color: #999999;
+  // background: #B8DAF7;
+  // opacity: 12;
+  .checkPass-item.el-form-item {
+    img {
+      position: absolute;
+      top: 42px;
+    }
+  }
+  .el-form-item {
+    position: relative;
+    img {
+      position: absolute;
+      top: 22px;
+      left: 23px;
+      z-index: 2;
+      width: 26px;
+    }
+    .el-input__inner {
+      font-size: 26px;
+      height: 70px !important;
+      // background: #ffffff;
+      text-indent: 45px;
+      border-radius: 8px;
+    }
+    .checkPass .el-input__inner{
+      margin-top: 20px;
+    }
+    .el-button {
+      height: 70px;
+      background: #1b69d4;
+      border-radius: 8px;
+      margin-top: 25px;
+      font-size: 26px !important;
+      .el-icon-loading {
+        font-size: 26px !important;
+      }
+      .el-loading-text {
+        font-size: 26px !important;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+  }
+  p {
+    font-size: 22px;
+    color: #fff;
+    font-family: BMWTypeCondensedLight!important;
+    margin-top: 30px;
+    margin-bottom: 24px;
+  }
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0)
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg)
+  }
+  40%,
+  80% {
+    transform: rotate(10deg)
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation: none
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+  }
+}

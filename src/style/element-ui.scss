@@ -1,0 +1,209 @@
+ //覆盖一些element-ui样式
+ .block-checkbox {
+   display: block;
+ }
+ .home-loading{
+  .el-icon-loading {
+    font-size: 50px!important;
+  }
+  .el-loading-text {
+    margin: 22px 0!important;
+    font-size: 18px!important;
+  }
+ };
+ 
+ .operation-container {
+   .cell {
+     padding: 10px !important;
+     font-family: BMWTypeCondensedLight!important;
+   }
+   .el-button {
+     &:nth-child(3) {
+       margin-top: 10px;
+       margin-left: 0px;
+     }
+     &:nth-child(4) {
+       margin-top: 10px;
+     }
+   }
+ }
+
+ .el-upload {
+   input[type="file"] {
+     display: none !important;
+   }
+ }
+
+ .el-upload__input {
+   display: none;
+ }
+
+ .cell {
+   .el-tag {
+     margin-right: 8px;
+   }
+ }
+
+ .mini-padding {
+   .cell {
+     padding-left: 8px;
+     padding-right: 8px;
+   }
+ }
+
+ .status-col {
+   .cell {
+     padding: 0 10px;
+     text-align: center;
+     .el-tag {
+       margin-right: 0px;
+     }
+   }
+ }
+
+
+
+ // messageBox 弹框
+.el-message-box.el-message-box--center{
+  width:790px;
+  height:295px;
+}
+ .el-message-box--center .el-message-box__header{
+   padding-top:60px;
+   padding-bottom:5px;
+ }
+//  .el-message-box__content{
+//   padding-bottom:0;
+//  }
+ // 弹框字体
+ .el-message-box__message{
+  font-size: 20px!important;
+  font-family: BMWTypeCondensedLight!important;
+   p {
+     p {
+       margin-bottom:20px;
+       font-size:24px;
+       font-weight:600;
+     };
+     p:nth-child(2){
+      font-size:16px;
+      font-weight:400;
+     }
+   }
+   p{
+    font-family: BMWTypeCondensedLight!important;
+   }
+ }
+ 
+ .el-message-box{
+  padding: 5px;
+  padding-bottom: 20px;
+  .el-message-box__btns{
+    .el-button{
+      font-size:18px;
+    }
+   }
+   .el-message-box__title{
+    font-size:24px!important;
+    font-weight:600;
+    
+  }
+  .el-message-box__status{
+    font-size: 70px!important;
+  }
+  .el-message-box__status.el-icon-error{
+    color: #F5222D;
+  }
+ }
+ 
+ .el-form-item__error{
+  font-size:20px;
+ }
+ .el-upload-dragger .el-upload__text{
+  
+   font-size:18px!important;
+ }
+ .el-upload__tip{
+  font-size:18px!important;
+}
+
+ //暂时性解决diolag 问题 https://github.com/ElemeFE/element/issues/2461
+ .el-dialog {
+   transform: none;
+   left: 0;
+   position: relative;
+   margin: 0 auto;
+ }
+
+ //文章页textarea修改样式
+ .article-textarea {
+   textarea {
+     padding-right: 40px;
+     resize: none;
+     border: none;
+     border-radius: 0px;
+     border-bottom: 1px solid #bfcbd9;/*no*/
+   }
+ }
+
+ // header下拉框
+//  .header{
+  .el-dropdown-menu{
+    width: 220px!important;
+    border: none;
+    
+    background: #545C69!important;
+    border-radius: 2px!important;
+    .el-dropdown-menu__item:hover{
+      color: #6e9cda!important;
+      background-color: #fff;
+    }
+  }
+  .el-dropdown-menu__item{
+    opacity: 0.7!important;
+    font-family: BMWTypeCondensedLight!important;
+    font-size: 16px!important;
+    color: #FFFFFF!important;
+    // position: relative;
+    img{
+      margin-right: 8px;
+      // width: 16px;
+      // position: absolute;
+      // left: 18px;
+      // top: 10px;
+    }
+    // padding-right: 0px;;
+  }
+  
+  .el-popper .popper__arrow::after{
+    border-bottom-color: #545C69!important;
+  }
+  .el-popper .popper__arrow{
+    border-bottom-color: #545C69!important;
+  }
+  .el-table__row td:nth-child(5){
+    .cell{
+      padding-right:30px;
+      .el-button{
+        float: right!important;
+        span{
+          margin-left:0;
+        }
+      }
+    }
+    
+  }
+  
+//  }
+ 
+
+ //element ui upload
+ .upload-container {
+   .el-upload {
+     width: 100%;
+     .el-upload-dragger {
+       width: 100%;
+       height: 200px;
+     }
+   }
+ }
